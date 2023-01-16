@@ -40,6 +40,7 @@ public class BooleanSearchEngine implements SearchEngine {
                 }
             }
         }
+        wordsLists.values().forEach(Collections::sort);
     }
 
     @Override

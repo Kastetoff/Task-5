@@ -23,10 +23,6 @@ public class PageEntry implements Comparable<PageEntry> {
 
     @Override
     public int compareTo(PageEntry word) {
-        if (word.getCount() > getCount()) {
-            return 1;
-        } else if (word.getCount() < getCount()) {
-            return -1;
-        } else return 0;
+        return Integer.compare(word.getCount(), getCount());
     }
 }
